@@ -6,16 +6,15 @@ async function main() {
 
     //Transporter configuration
     let transporter = nodeMailer.createTransport({
-        host: "https://liuyangtong.herokuapp.com",
-        port: 2525,
+        host: "smtp.gmail.com",
+        port: 465,
         auth: {
-          user: "4f32aaf03c55ee",
-          pass: "a411b866326eab"
+          user: "cjfrancisf@gmail.com",
+          pass: "justicefrancis"
         }
     })
 
     var mailOptions = {
-        from: 'cjfrancisf@gmail.com',
         to: workerData.email,
         subject: 'Testmail',
         //text: 'Hi'+ workerData.email+' here is your conversation ID : [' + workerData.id +']  visit link https://function on'+ workerData.date,
