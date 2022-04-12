@@ -6,7 +6,7 @@ async function main() {
 
     //Transporter configuration
     let transporter = nodeMailer.createTransport({
-        host: "smtp.mailtrap.io",
+        host: "https://liuyangtong.herokuapp.com",
         port: 2525,
         auth: {
           user: "4f32aaf03c55ee",
@@ -15,7 +15,7 @@ async function main() {
     })
 
     var mailOptions = {
-        from: 'chfrancisff@gmail.com',
+        from: 'cjfrancisf@gmail.com',
         to: workerData.email,
         subject: 'Testmail',
         //text: 'Hi'+ workerData.email+' here is your conversation ID : [' + workerData.id +']  visit link https://function on'+ workerData.date,
