@@ -86,8 +86,8 @@ io.on("connection", (socket) => {
   })
 });
 
-httpServer.listen(PORT, () => {
-  console.log(`Server Listening on port ${PORT}`);
+httpServer.listen(process.env.PORT||PORT, () => {
+  console.log(`Server Listening`);
 });
 
 app.use(cors())
