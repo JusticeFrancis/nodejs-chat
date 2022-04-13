@@ -6,10 +6,9 @@ async function main() {
 
     //Transporter configuration
     let transporter = nodeMailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 465,
+        service: "gmail",
         auth: {
-          user: "cjfrancisf@gmail.com",
+          user: "cjfrancisf1@gmail.com",
           pass: "justicefrancis"
         }
     })
