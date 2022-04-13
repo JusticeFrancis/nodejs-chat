@@ -8,7 +8,7 @@ async function main() {
     let transporter = nodeMailer.createTransport({
         service: "gmail",
         auth: {
-          user: "cjfrancisf1@gmail.com",
+          user: "cjfrancisf2@gmail.com",
           pass: "justicefrancis"
         }
     })
