@@ -14,6 +14,8 @@ const io = require("socket.io")(httpServer, {
   cors: {
     origin: "https://react-chat-app-tan.vercel.app/",
     methods: ["GET", "POST"],
+    allowedHeaders: ["my-custom-header"],
+    credentials: true
   },
 });
 const PORT = 7000;
