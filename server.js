@@ -86,18 +86,9 @@ io.on("connection", (socket) => {
   })
 });
 
-var cors_proxy = require('cors-anywhere');
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-    requireHeader: ['origin', 'x-requested-with'],
-    removeHeaders: ['cookie', 'cookie2']
-}).listen(process.env.PORT||PORT, process.env.HOST || '0.0.0.0', function() {
-    console.log('Running CORS Anywhere on ' + host + ':' + port);
-});
-
-/* httpServer.listen(process.env.PORT||PORT, () => {
+httpServer.listen(process.env.PORT||PORT, () => {
   console.log(`Server Listening`);
-}); */
+});
 
 app.use(cors())
 app.use(express.json()) // for parsing application/json
