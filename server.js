@@ -12,7 +12,7 @@ var user_controller = require('./controllers/UserController')
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://react-chat-app-tan.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
